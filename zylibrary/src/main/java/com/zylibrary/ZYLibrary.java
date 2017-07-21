@@ -37,6 +37,8 @@ public class ZYLibrary {
                 //其他配置
                 .build();
         OkHttpUtils.initClient(okHttpClient);
+
+        //  修改
     }
 
     public static Application app() {
