@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+    <TextView
+        android:id="@+id/item_main_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="name"/>
+
+    <!--
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_launcher"/>
+        -->
+    <com.zy.demo.mydemo.view.RoundImageView
+        android:id="@+id/item_main_image_riv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_head"
+        android:scaleType="fitXY"
+        imagecontrol:border_inside_color="@null"
+        imagecontrol:border_outside_color="@null"
+        imagecontrol:border_thickness="0dp"/>
+    <!-- 圆圈边框有两层
+     border_inside_color 表示内层颜色
+     border_outside_color 表示外层颜色
+     border_thickness 表示边框距边缘的距离-->
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/CoolWeather" />
+            <option value="$PROJECT_DIR$/EventBusDemo" />
+            <option value="$PROJECT_DIR$/MaterialDesignDemo" />
+            <option value="$PROJECT_DIR$/PhotoWallDemo" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/btnanimal" />
+            <option value="$PROJECT_DIR$/pinchimageview" />
+            <option value="$PROJECT_DIR$/tinkerdemo" />
+            <option value="$PROJECT_DIR$/wheelview" />
+            <option value="$PROJECT_DIR$/zylibrary" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        -->
+        <item name="android:listDivider">@drawable/divider_bg</item> <!-- 列表分割线 -->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="Pop_TAB_title_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Pop_TAB_title_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+       <!-- <item name="android:layout_weight">3</item> -->
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textSize">@dimen/popwindow_tab_title</item>
+    </style>
+
+    <style name="Pop_TAB_title_iv">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">match_parent</item>
+       <!-- <item name="android:layout_weight">2</item>-->
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:scaleX">0.8</item>
+        <item name="android:scaleY">0.8</item>
+        <item name="android:src">@drawable/arrow_triangle_left</item>
+    </style>
+
+    <style name="Pop_TAB_content_tv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/popwindow_tab_content</item>
+    </style>
+
+    <!-- popupWindow的弹出动画和消失动画 -->
+    <style name="Pop_TAB_anim">
+        <item name="android:windowEnterAnimation">@anim/shape_pop_in</item>
+    </style>
+
+    <style name="DownPopupWindowAnim">
+        <item name="android:windowEnterAnimation">@anim/set_in_down</item>
+    </style>
+
+    <!-- 没有activity打开动画 -->
+    <style name="pic_view" parent="android:Theme">
+        <item name="android:windowAnimationStyle">@style/noAnimation</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="noAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+    </style>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MaterialDesignDemo</string>
+    <string name="MainActivity">MainActivity</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+</resources>

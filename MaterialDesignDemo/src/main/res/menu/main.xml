@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/backup"
+        android:title="Backup"
+        android:icon="@mipmap/ic_stars_black_24dp"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/delete"
+        android:title="Delete"
+        android:icon="@mipmap/ic_flare_black_24dp"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/settings"
+        android:icon="@mipmap/ic_brightness_7_black_24dp"
+        android:title="Settings"
+        app:showAsAction="never"/>
+</menu>
