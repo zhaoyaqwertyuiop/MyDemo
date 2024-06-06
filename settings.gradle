@@ -1,1 +1,0 @@
-include ':app', ':PhotoWallDemo', ':zylibrary', ':btnanimal', ':EventBusDemo', ':MaterialDesignDemo', ':CoolWeather', ':pinchimageview', ':wheelview', ':tinkerdemo'
