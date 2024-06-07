@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "MyDemo"
 include(":app")
 include(":LibCommon")
+include(":LibCustomerView")

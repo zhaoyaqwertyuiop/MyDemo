@@ -1,20 +1,17 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 android {
-    namespace = "com.zy.demo"
+    namespace = "com.zy.customer"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.zy.demo"
         minSdk = 19
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -40,7 +37,6 @@ android {
 
 dependencies {
     api(project(":LibCommon"))
-    api(project(":LibCustomerView"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
