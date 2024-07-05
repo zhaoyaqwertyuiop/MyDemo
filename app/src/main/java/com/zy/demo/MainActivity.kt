@@ -1,16 +1,13 @@
 package com.zy.demo
 
+import android.content.ComponentName
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import com.blankj.utilcode.util.ToastUtils
-import com.zy.customer.ChangeColorActivity
+import com.zy.common.route.RouteUtil
 import com.zy.demo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -37,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             ToastUtils.showShort("123")
         })
         adapter.dataList.add(ItemData("ChangeColorTextView") {
-            startActivity(Intent(this, ChangeColorActivity::class.java))
+            RouteUtil.startActivity(packageName, "com.zy.customer.ChangeColorActivity")
         })
     }
 }

@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/LibCommon" />
+            <option value="$PROJECT_DIR$/LibCustomerView" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
