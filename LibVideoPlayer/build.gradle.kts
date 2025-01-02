@@ -1,20 +1,17 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 android {
-    namespace = "com.zy.demo"
+    namespace = "com.zy.player"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.zy.demo"
         minSdk = 19
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -40,12 +37,13 @@ android {
 
 dependencies {
     api(project(":LibCommon"))
-    api(project(":LibCustomerView"))
-    api(project(":LibVideoPlayer"))
-    api(project(":LibIflytek"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
+    implementation("androidx.media3:media3-ui:1.1.0")
+    implementation("androidx.media3:media3-session:1.1.0")
+    implementation("androidx.media3:media3-exoplayer:1.0.0")
 }

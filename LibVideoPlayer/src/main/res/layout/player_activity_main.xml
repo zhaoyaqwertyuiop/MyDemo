@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerActivity">
+
+    <!-- show_buffering 是否显示缓冲状态  -->
+    <!-- use_controller 是否显示控制器  -->
+    <!-- resize_mode 调整视频大小模式  -->
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/playView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:show_buffering="always"
+        app:use_controller="false"
+        app:resize_mode="fill"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.4"/>
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/playView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:show_buffering="always"
+        app:use_controller="false"
+        app:resize_mode="fill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.4"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <Button
+            android:id="@+id/playBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放1" />
+
+        <Button
+            android:id="@+id/playBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放2" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

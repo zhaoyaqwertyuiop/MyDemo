@@ -5,8 +5,7 @@
         <provider
             android:name="com.zy.common.MyProvider"
             android:authorities="${applicationId}.libcommon.MyProvider"
-            android:exported="false"
-            android:grantUriPermissions="true">
+            android:exported="false">
         </provider>
     </application>
 </manifest>

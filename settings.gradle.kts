@@ -23,3 +23,5 @@ rootProject.name = "MyDemo"
 include(":app")
 include(":LibCommon")
 include(":LibCustomerView")
+include(":LibVideoPlayer")
+include(":LibIflytek")

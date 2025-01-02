@@ -5,6 +5,9 @@
         <activity
             android:name=".ChangeColorActivity"
             android:exported="false" />
+        <activity
+            android:name=".CountdownActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

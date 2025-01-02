@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IflytekDemoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <Button
+            android:id="@+id/doCreateGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建声纹特征库" />
+
+        <Button
+            android:id="@+id/doCreateFeature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加音频特征" />
+        <Button
+            android:id="@+id/doQueryFeatureList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询特征列表" />
+        <Button
+            android:id="@+id/doSearchOneFeature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="特征比对1:1" />
+        <Button
+            android:id="@+id/doSearchFeature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="特征比对1:N" />
+        <Button
+            android:id="@+id/doUpdateFeature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新音频特征" />
+        <Button
+            android:id="@+id/doDeleteFeature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除指定特征" />
+        <Button
+            android:id="@+id/doDeleteGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除声纹特征库" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="录制音频" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

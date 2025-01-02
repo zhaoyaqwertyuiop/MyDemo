@@ -36,5 +36,11 @@ class MainActivity : AppCompatActivity() {
         adapter.dataList.add(ItemData("ChangeColorTextView") {
             RouteUtil.startActivity(packageName, "com.zy.customer.ChangeColorActivity")
         })
+        adapter.dataList.add(ItemData("media3") {
+            RouteUtil.startActivity(packageName, "com.zy.player.PlayerActivity")
+        })
+        adapter.dataList.add(ItemData("iflytek") {
+            RouteUtil.startActivity(packageName, "com.zy.iflytek.IflytekDemoActivity")
+        })
     }
 }

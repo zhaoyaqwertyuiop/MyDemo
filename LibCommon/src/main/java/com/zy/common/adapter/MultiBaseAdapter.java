@@ -34,7 +34,7 @@ public abstract class MultiBaseAdapter extends RecyclerView.Adapter<MultiBaseAda
 
     private IItemConvert findConvert(int viewType) {
         for (MultiData multiData: dataList) {
-            if (multiData.getViewBinding().hashCode() == viewType) {
+            if (multiData.getViewBindingClass().hashCode() == viewType) {
                 for (IItemConvert itemConvert: convertList) {
                     if (itemConvert.isCurrentConvert(multiData)){
                         return itemConvert;
@@ -69,7 +69,7 @@ public abstract class MultiBaseAdapter extends RecyclerView.Adapter<MultiBaseAda
 
     @Override
     public int getItemViewType(int position) {
-        return dataList.get(position).getViewBinding().hashCode();
+        return dataList.get(position).getViewBindingClass().hashCode();
     }
 
     public class BaseViewHolder extends RecyclerView.ViewHolder {
@@ -84,7 +84,7 @@ public abstract class MultiBaseAdapter extends RecyclerView.Adapter<MultiBaseAda
 
     public interface MultiData {
         // 这里把viewbing类的hashCode作为itemtype
-        Class<? extends ViewBinding> getViewBinding();
+        Class<? extends ViewBinding> getViewBindingClass();
     }
 
     //    public interface IItemConvert<T extends MultiBaseAdapter.IMulti, VB extends ViewBinding> {

@@ -46,7 +46,7 @@ public abstract class ItemConvert<T extends MultiBaseAdapter.MultiData, VB exten
     @Override
     public boolean isCurrentConvert(@NonNull MultiBaseAdapter.MultiData multiData) {
         // T 和 VB 类型都匹配，就是这个convert
-        return getTClass() == multiData.getClass() && getVBClass() == multiData.getViewBinding();
+        return getTClass() == multiData.getClass() && getVBClass() == multiData.getViewBindingClass();
     }
 
     // 当view需要设置click事件给外部时使用此方法
