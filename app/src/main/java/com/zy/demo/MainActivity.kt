@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.blankj.utilcode.util.ToastUtils
+import com.zy.common.other.ScreenMatchUtil
 import com.zy.common.route.RouteUtil
 import com.zy.demo.databinding.ActivityMainBinding
 
@@ -41,6 +42,10 @@ class MainActivity : AppCompatActivity() {
         })
         adapter.dataList.add(ItemData("iflytek") {
             RouteUtil.startActivity(packageName, "com.zy.iflytek.IflytekDemoActivity")
+        })
+        adapter.dataList.add(ItemData("最小宽度限定符") {
+            val screenWidthDp = ScreenMatchUtil.getSmallestScreenWidthDp(this)
+            ToastUtils.showShort("$screenWidthDp dp")
         })
     }
 }
