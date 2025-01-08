@@ -17,9 +17,27 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled = true  //默认启用多dex
     }
+    signingConfigs {
+        create("key") {
+            keyAlias = "zy"
+            keyPassword = "123456"
+            storeFile = file("../key/zy.jks")
+            storePassword = "123456"
+        }
+    }
 
     buildTypes {
+        debug {
+            signingConfig = signingConfigs.getByName("key")
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+
         release {
+            signingConfig = signingConfigs.getByName("key")
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),

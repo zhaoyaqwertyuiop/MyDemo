@@ -1,7 +1,9 @@
-package com.zy.common.other;
+package com.zy.common.util;
 
 import android.content.Context;
 import android.util.DisplayMetrics;
+
+import com.blankj.utilcode.util.ScreenUtils;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -18,6 +20,23 @@ public class ScreenMatchUtil {
         int smallestScreenWidthDp = context.getResources().getConfiguration().smallestScreenWidthDp;
         // 如果计算出的最小宽度与系统配置的不一致，使用系统配置的值
         return smallestScreenWidthDp > 0 ? smallestScreenWidthDp : (int) widthDp;
+    }
+
+    public static float getSmallestScreenWidthDp2(Context context) {
+        DisplayMetrics metrics = context.getResources().getDisplayMetrics();
+        float widthDp = metrics.widthPixels / metrics.density;
+        int heightPixels = ScreenUtils.getScreenHeight();
+        int widthPixels = ScreenUtils.getScreenWidth();
+        float density = metrics.density;
+        float heightDP = heightPixels / density;
+        float widthDP = widthPixels / density;
+        float smallestWidthDP;
+        if(widthDP < heightDP) {
+            smallestWidthDP = widthDP;
+        }else {
+            smallestWidthDP = heightDP;
+        }
+        return smallestWidthDP;
     }
 
     public static void main(double targetSize) {

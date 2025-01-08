@@ -42,4 +42,6 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation("io.noties.markwon:core:4.6.2")
+    implementation("io.noties.markwon:simple-ext:4.6.2")
 }

@@ -8,6 +8,9 @@
         <activity
             android:name=".CountdownActivity"
             android:exported="false" />
+        <activity
+            android:name=".MarkdownActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
