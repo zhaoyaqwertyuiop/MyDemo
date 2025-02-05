@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() {
             ToastUtils.showShort("$screenWidthDp dp, $screenWidthDp2 px")
         })
         adapter.dataList.add(ItemData("apk升级") {
+
             ApkUploadUtil.o.download(this, "https://oss-beijing-sh-internal.openstorage.cn/iptv-oss-prod/common/use_help/app-release.apk", "77c41e7ee58725dc602df3f8704a1b58", 1)
         })
     }
